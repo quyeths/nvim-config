@@ -181,6 +181,16 @@ local mappings = {
     h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
   },
+  d = {
+    name = "Debug",
+    c = { "<cmd>DapContinue<cr>", "Continue" },
+    t = { "<cmd>DapToggleBreakpoint<cr>", "DapToggleBreakpoint" },
+    T = { "<cmd>DapToggleRepl<cr>", "DapToggleRepl" },
+    q = { "<cmd>DapTerminate<cr>", "DapTerminate" },
+    i = { "<cmd>DapStepInto<cr>", "DapStepInto" },
+    o = { "<cmd>DapStepOver<cr>", "StepOver" },
+    O = { "<cmd>DapStepOut<cr>", "StepOut" },
+  }
 }
 
 which_key.setup(setup)
