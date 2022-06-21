@@ -61,7 +61,9 @@ return packer.startup(function(use)
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-  use "lunarvim/darkplus.nvim"
+  -- use "lunarvim/darkplus.nvim"
+  -- use "shaunsingh/nord.nvim"
+  use "morhetz/gruvbox"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -97,7 +99,7 @@ return packer.startup(function(use)
   use "Pocco81/AutoSave.nvim"
 
   --nvim-dap-ui
-  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+  use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
   use 'mfussenegger/nvim-dap-python'
 
   --vim-trasparent
