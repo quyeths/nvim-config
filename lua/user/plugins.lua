@@ -60,9 +60,9 @@ return packer.startup(function(use)
   use "folke/which-key.nvim"
 
   -- Colorschemes
-  -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-  -- use "lunarvim/darkplus.nvim"
-  -- use "shaunsingh/nord.nvim"
+  use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
+  use "lunarvim/darkplus.nvim"
+  use "shaunsingh/nord.nvim"
   use "morhetz/gruvbox"
 
   -- cmp plugins
@@ -84,11 +84,7 @@ return packer.startup(function(use)
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
   -- Telescope
-  use {
-    'nvim-telescope/telescope.nvim',
-    requires = { { 'nvim-lua/plenary.nvim' } }
-  }
-  use "BurntSushi/ripgrep"
+  use "nvim-telescope/telescope.nvim"
   use "nvim-telescope/telescope-media-files.nvim"
   -- Treesitter
   use {
