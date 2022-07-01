@@ -108,6 +108,10 @@ return packer.startup(function(use)
 
   -- Tagbar
   use "preservim/tagbar"
+
+  -- css color
+  use "ap/vim-css-color"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
